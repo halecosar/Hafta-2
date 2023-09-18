@@ -1,6 +1,8 @@
 public class Palindrom {
-    static boolean isPalindrom(int input) {
+    static boolean isPalindrom(int input) { //metot belirlendi.
 
+
+        //değişkenler belirlendi.
         int temp, kalan, tersSayi = 0;
         temp = input;
 
@@ -9,7 +11,7 @@ public class Palindrom {
             tersSayi = (tersSayi * 10) + kalan;
             temp = temp / 10;
         }
-
+        //girlen sayı tersine eşitse true,değilse false gelsin.
         if (input == tersSayi)
 
             return true;
@@ -17,7 +19,6 @@ public class Palindrom {
         else
             return false;
     }
-
 
 
     public static void main(String[] args) {
